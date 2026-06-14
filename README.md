@@ -195,33 +195,45 @@ Supplier naming inconsistencies highlighted the importance of master data govern
 ## Repository Structure
 ```text
 procurement-fraud-supplier_risk_pipeline/
-
+│
 ├── data/
 │   └── procurement_invoices_dirty.json
-
+│
 ├── python/
 │   └── load_procurement_json.py
-
+│
 ├── sql/
 │   ├── 01_create_schemas.sql
 │   ├── 02_create_tables.sql
 │   ├── 03_load_data.sql
-│   ├── 04_data_cleaning.sql
-│   ├── 05_risk_flags.sql
+│   ├── 04_data_quality_checks.sql
+│   ├── 05_fraud_risk_scoring.sql
 │   └── 06_business_queries.sql
-
+│
 ├── powerbi/
 │   └── procurement_fraud_supplier_risk_dashboard.pbix
-
+│
+├── screenshots/
+│   ├── 01_department_spend_analysis.png
+│   ├── 02_supplier_risk_analysis.png
+│   ├── 03_top_risky_invoices.png
+│   ├── 04_kpi_summary.png
+│   ├── 05_invoice_risk_flags_view.png
+│   ├── 06_high_value_invoices.png
+│   ├── 07_missing_po_invoices.png
+│   ├── 08_late_payment_invoices.png
+│   ├── 09_approval_risk_invoices.png
+│   ├── 10_supplier_name_quality_check.png
+│   └── 11_raw_data_preview.png
+│
 ├── reports/
 │   ├── Procurement_Fraud_Supplier_Risk_Project_Report.docx
-│   └── Procurement_Fraud_Supplier_Risk_SQL_Appendix.docx
-
-├── screenshots/
-
+│   ├── Procurement_Fraud_Supplier_Risk_Project_Report.pdf
+│   ├── Procurement_Fraud_Supplier_Risk_SQL_Appendix.docx
+│   └── Procurement_Fraud_Supplier_Risk_SQL_Appendix.pdf
+│
 └── README.md
 ```
-
 ## Skills Demonstrated
 * SQL Development
 * PostgreSQL Database Design
